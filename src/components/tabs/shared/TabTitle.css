@@ -1,0 +1,18 @@
+.tab-title {
+    padding: 12px 24px 12px 24px;
+    background-color: white;
+}
+
+.tab-title h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+    float: left;
+    font-weight: bold;
+}
+
+.tab-title p {
+    margin: 0;
+    font-size: 24px;
+    text-align: right;
+}

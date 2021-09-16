@@ -1,0 +1,21 @@
+.tab-header {
+    padding: 9px 24px 9px 24px;
+    background-color: #262626;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.tab-header h2 {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+    float: left;
+    font-weight: 600;
+}
+
+.tab-header p {
+    margin: 0;
+    margin-right: 24px;
+}
