@@ -7,9 +7,6 @@ type TabHeaderProps = {
 }
 
 export default class TabHeader extends React.Component<TabHeaderProps> {
-    constructor(props: TabHeaderProps) {
-        super(props)
-    }
     render() {
         return <div className="tab-header">
             <h2>Exploring...</h2>

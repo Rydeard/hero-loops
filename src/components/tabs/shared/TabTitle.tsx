@@ -7,9 +7,6 @@ type TabTitleProps = {
 }
 
 export default class TabTitle extends React.Component<TabTitleProps> {
-    constructor(props: TabTitleProps) {
-        super(props)
-    }
     render() {
         return <div className="tab-title">
             <h1>{this.props.leftString}</h1>

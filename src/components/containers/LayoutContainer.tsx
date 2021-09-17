@@ -10,10 +10,6 @@ type LayoutContainerState = {
 }
 
 export default class LayoutContainer extends React.Component<LayoutContainerProps, LayoutContainerState> {
-    constructor(props: LayoutContainerProps) {
-        super(props)
-    }
-
     render() {
         return <div id="container-wrapper">
             <div id="left-container">

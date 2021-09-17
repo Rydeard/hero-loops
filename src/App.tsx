@@ -1,7 +1,7 @@
 import './App.css';
 import TabBar from './components/main/TabBar';
 import 'typeface-inter';
-import GameTickTest from './components/main/GameTickTest';
+// import GameTickTest from './components/main/GameTickTest';
 import React from 'react';
 import LayoutContainer from './components/containers/LayoutContainer';
 import LoopOverview from './components/tabs/home/LoopOverview';

@@ -13,9 +13,6 @@ type LoopOverviewListProps = {
 }
 
 export default class LoopOverviewList extends React.Component<LoopOverviewListProps> {
-    constructor(props:LoopOverviewListProps){
-        super(props)
-    }
     render() {
         let loopListItems: Array<JSX.Element> = [];
         this.props.loopItems.forEach((loopItem, index) => {
