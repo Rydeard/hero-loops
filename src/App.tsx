@@ -5,6 +5,13 @@ import 'typeface-inter';
 import React from 'react';
 import LayoutContainer from './components/containers/LayoutContainer';
 import LoopOverview from './components/tabs/home/LoopOverview';
+import LoopPlanner from './components/tabs/loop/LoopPlanner';
+import Combat from './components/tabs/home/Combat';
+import ChooseActions from './components/tabs/loop/ChooseActions';
+import Attributes from './components/tabs/character/Attributes';
+import Items from './components/tabs/character/Items';
+import CombatStrategy from './components/tabs/skills/CombatStrategy';
+import Skills from './components/tabs/skills/Skills';
 
 type AppProps = {
 }
@@ -14,10 +21,16 @@ type AppState = {
   prevGameTick: number
   deltaTime: number
   intervalRef?: NodeJS.Timeout
+  selectedTabIndex: number,
 }
 
 type GameData = {
 
+}
+
+type TabData = {
+  leftContainerContent: React.ReactElement,
+  rightContainerContent: React.ReactElement
 }
 
 export default class App extends React.Component<AppProps, AppState> {
@@ -26,20 +39,50 @@ export default class App extends React.Component<AppProps, AppState> {
     this.state = {
       gameTick: 0,
       prevGameTick: 0,
-      deltaTime: 0
+      deltaTime: 0,
+      selectedTabIndex: 0
     }
+
+    // this.handleTabChange.bind(this)
   }
 
   render() {
     //        <GameTickTest gameTick={this.state.gameTick}></GameTickTest>
+    let tabs:Array<TabData> = [
+      //home
+      {
+        leftContainerContent: <LoopOverview></LoopOverview>,
+        rightContainerContent: <Combat></Combat>
+      },
+      //loop
+      {
+        leftContainerContent: <LoopPlanner></LoopPlanner>,
+        rightContainerContent: <ChooseActions></ChooseActions>
+      },
+      //character
+      {
+        leftContainerContent: <Attributes></Attributes>,
+        rightContainerContent: <Items></Items>
+      },
+      //skills
+      {
+        leftContainerContent: <CombatStrategy></CombatStrategy>,
+        rightContainerContent: <Skills></Skills>
+      },
+    ]
 
+    let selectedTab:TabData = tabs[this.state.selectedTabIndex]
     return (
       <div>
-        <TabBar tabs={["Home", "Loop", "Character", "Skills"]}></TabBar>
-        <LayoutContainer leftContainerContent={<LoopOverview></LoopOverview>} rightContainerContent={<div></div>}></LayoutContainer>
+        <TabBar tabs={["Home", "Loop", "Character", "Skills"]} onClick={this.handleTabChange} selectedTabIndex={this.state.selectedTabIndex}></TabBar>
+        <LayoutContainer {...selectedTab} ></LayoutContainer>
       </div>
 
     );
+  }
+
+  handleTabChange = (tabIndex:number):void=>{
+    this.setState({selectedTabIndex: tabIndex});
   }
 
   tick() {

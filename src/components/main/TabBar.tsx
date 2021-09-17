@@ -3,13 +3,11 @@ import './TabBar.css';
 
 type TabBarProps = {
     tabs: Array<string>;
-}
-
-type TabBarState = {
     selectedTabIndex: number;
+    onClick: (tabIndex:number)=>void;
 }
 
-export default class TabBar extends React.Component<TabBarProps, TabBarState> {
+export default class TabBar extends React.Component<TabBarProps> {
     constructor(props: TabBarProps) {
         super(props)
         this.state = { selectedTabIndex: 0 }
@@ -17,10 +15,10 @@ export default class TabBar extends React.Component<TabBarProps, TabBarState> {
     render() {
         let tabs: Array<JSX.Element> = [];
         this.props.tabs.forEach((tabName, index) => {
-            const classes = `tab-bar-entry ${this.state.selectedTabIndex === index ? 'tab-bar-entry-focused' : ''}`;
+            const classes = `tab-bar-entry ${this.props.selectedTabIndex === index ? 'tab-bar-entry-focused' : ''}`;
             tabs.push(
                 <li key={tabName}
-                    onClick={() => { this.setState({ selectedTabIndex: index }) }}
+                    onClick={()=>{this.props.onClick(index)}}
                     className={classes}>{tabName}
                 </li>
             )
