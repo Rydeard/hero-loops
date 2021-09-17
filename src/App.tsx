@@ -48,7 +48,7 @@ export default class App extends React.Component<AppProps, AppState> {
 
   render() {
     //        <GameTickTest gameTick={this.state.gameTick}></GameTickTest>
-    let tabs:Array<TabData> = [
+    const tabs:Array<TabData> = [
       //home
       {
         leftContainerContent: <LoopOverview></LoopOverview>,
@@ -73,6 +73,7 @@ export default class App extends React.Component<AppProps, AppState> {
 
     let selectedTab:TabData = tabs[this.state.selectedTabIndex]
     return (
+      
       <div>
         <TabBar tabs={["Home", "Loop", "Character", "Skills"]} onClick={this.handleTabChange} selectedTabIndex={this.state.selectedTabIndex}></TabBar>
         <LayoutContainer {...selectedTab} ></LayoutContainer>

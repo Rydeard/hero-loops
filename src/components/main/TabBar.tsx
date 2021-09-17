@@ -8,10 +8,6 @@ type TabBarProps = {
 }
 
 export default class TabBar extends React.Component<TabBarProps> {
-    constructor(props: TabBarProps) {
-        super(props)
-        this.state = { selectedTabIndex: 0 }
-    }
     render() {
         let tabs: Array<JSX.Element> = [];
         this.props.tabs.forEach((tabName, index) => {
