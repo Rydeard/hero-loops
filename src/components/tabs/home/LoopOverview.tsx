@@ -11,7 +11,7 @@ type LoopOverviewProps = {
 
 export default class LoopOverview extends React.Component<LoopOverviewProps> {
     render() {
-        let tabHeaders = [<h2>Exploring...</h2>, <p style={{marginRight: 24}}>{Icons.clock}</p>]
+        let tabHeaders = [<h2>Exploring...</h2>, <div style={{marginRight: 6}}>{Icons.clock}</div>]
 
         let x = <div></div>
         // set x style to background-color:red
@@ -30,7 +30,7 @@ export default class LoopOverview extends React.Component<LoopOverviewProps> {
                 primaryText: "Test",
                 secondaryText: "Test",
                 minutes: 30
-            }
+            },
         ]
         return loopItems;
     }

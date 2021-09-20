@@ -26,14 +26,16 @@
 }
 
 .main-action {
+    box-sizing: border-box;
     border: 1px solid black;
-    padding: 10px 0px 10px 0px;
+    padding: 12px 0px 12px 0px;
     cursor: pointer;
 }
 
 .main-action:hover {
     background-color: #F0F0F0;
     border: 2px solid black;
+    padding: 10px 0px 10px 0px;
 }
 
 .main-action-selected {

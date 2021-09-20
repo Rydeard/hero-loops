@@ -8,8 +8,8 @@ export default class LoopPlanner extends React.Component {
     render() {
         let tabHeaders = [<h2>Action</h2>,
         <div>
-            <p style={{ display:"inline", marginRight: 24 }}>{Icons.clock}</p>
-            <p style={{ display:"inline", marginRight: 24 }}>{Icons.repeat}</p>
+            <div style={{ display:"inline", marginRight: 24 }}>{Icons.clock}</div>
+            <div style={{ display:"inline", marginRight: 24 }}>{Icons.repeat}</div>
         </div>]
 
         return <div>

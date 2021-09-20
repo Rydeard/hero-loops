@@ -18,3 +18,13 @@
 .tab-bar-entry-focused {
     font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+    .tab-bar-entry {
+        font-size: 32px;
+    }
+    #tab-bar {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+}

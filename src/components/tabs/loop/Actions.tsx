@@ -9,13 +9,9 @@ import './Actions.css'
 
 export default class Actions extends React.Component {
     render() {
-        let tabHeaders = [<h2>Action</h2>,
-        <div>
-            <p style={{ display: "inline", marginRight: 24 }}>{Icons.clock}</p>
-            <p style={{ display: "inline", marginRight: 24 }}>{Icons.repeat}</p>
-        </div>]
+        let tabHeaders = [<h2>Areas</h2>,]
         return <div>
-            <TabTitle leftString={"Choose Actions"}></TabTitle>
+            <TabTitle leftString={"Actions"}></TabTitle>
             <TabHeader tabHeaders={tabHeaders}></TabHeader>
             <div id="actions-container"><MainActions></MainActions>
                 <SubActions></SubActions></div>
