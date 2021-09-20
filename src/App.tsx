@@ -7,7 +7,7 @@ import LayoutContainer from './components/containers/LayoutContainer';
 import LoopOverview from './components/tabs/home/LoopOverview';
 import LoopPlanner from './components/tabs/loop/LoopPlanner';
 import Combat from './components/tabs/home/Combat';
-import ChooseActions from './components/tabs/loop/ChooseActions';
+import Actions from './components/tabs/loop/Actions';
 import Attributes from './components/tabs/character/Attributes';
 import Items from './components/tabs/character/Items';
 import CombatStrategy from './components/tabs/skills/CombatStrategy';
@@ -57,7 +57,7 @@ export default class App extends React.Component<AppProps, AppState> {
       //loop
       {
         leftContainerContent: <LoopPlanner></LoopPlanner>,
-        rightContainerContent: <ChooseActions></ChooseActions>
+        rightContainerContent: <Actions></Actions>
       },
       //character
       {

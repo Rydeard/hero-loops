@@ -4,10 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
+    color: white;
 }
 
 .tab-header h2 {
-    color: white;
     margin: 0;
     font-size: 18px;
     text-align: left;
@@ -15,7 +15,11 @@
     font-weight: 600;
 }
 
-.tab-header p {
+.tab-header * {
+    vertical-align: middle;
     margin: 0;
-    margin-right: 24px;
+}
+
+.tab-header p {
+    line-height: 1.7;
 }

@@ -11,19 +11,26 @@ type LoopOverviewProps = {
 
 export default class LoopOverview extends React.Component<LoopOverviewProps> {
     render() {
+        let tabHeaders = [<h2>Exploring...</h2>, <p style={{marginRight: 24}}>{Icons.clock}</p>]
+
+        let x = <div></div>
+        // set x style to background-color:red
+
         return <div>
             <TabTitle leftString={"Day 1"} rightString={"1:30pm"}></TabTitle>
-            <TabHeader leftString={"Exploring..."} rightString={"Test"}></TabHeader>
+            <TabHeader tabHeaders={tabHeaders}></TabHeader>
             <LoopOverviewList loopItems={this.fetchLoopItems()}></LoopOverviewList>
-            </div>
+        </div>
     }
 
-    fetchLoopItems():Array<LoopItem>{
-        let loopItems:Array<LoopItem> = [
-            {icon: Icons.chat,
-                primaryText:"Test",
-                secondaryText:"Test",
-                minutes:30}
+    fetchLoopItems(): Array<LoopItem> {
+        let loopItems: Array<LoopItem> = [
+            {
+                icon: Icons.chat,
+                primaryText: "Test",
+                secondaryText: "Test",
+                minutes: 30
+            }
         ]
         return loopItems;
     }

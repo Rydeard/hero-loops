@@ -10,7 +10,7 @@ export default class TabTitle extends React.Component<TabTitleProps> {
     render() {
         return <div className="tab-title">
             <h1>{this.props.leftString}</h1>
-            <p>{this.props.rightString ?? ""}</p>
+            <p>{this.props.rightString ?? <div>&nbsp;</div>}</p>
         </div>
     }
 }
