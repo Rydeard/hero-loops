@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/hero-loops/static/css/main.2df9cab0.chunk.css",
-    "main.js": "/hero-loops/static/js/main.ec802982.chunk.js",
-    "main.js.map": "/hero-loops/static/js/main.ec802982.chunk.js.map",
+    "main.css": "/hero-loops/static/css/main.c14381a4.chunk.css",
+    "main.js": "/hero-loops/static/js/main.556f7528.chunk.js",
+    "main.js.map": "/hero-loops/static/js/main.556f7528.chunk.js.map",
     "runtime-main.js": "/hero-loops/static/js/runtime-main.8ec0156a.js",
     "runtime-main.js.map": "/hero-loops/static/js/runtime-main.8ec0156a.js.map",
     "static/css/2.0d28e522.chunk.css": "/hero-loops/static/css/2.0d28e522.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.121a4678.chunk.js.map": "/hero-loops/static/js/3.121a4678.chunk.js.map",
     "index.html": "/hero-loops/index.html",
     "static/css/2.0d28e522.chunk.css.map": "/hero-loops/static/css/2.0d28e522.chunk.css.map",
-    "static/css/main.2df9cab0.chunk.css.map": "/hero-loops/static/css/main.2df9cab0.chunk.css.map",
+    "static/css/main.c14381a4.chunk.css.map": "/hero-loops/static/css/main.c14381a4.chunk.css.map",
     "static/js/2.92bc3fcd.chunk.js.LICENSE.txt": "/hero-loops/static/js/2.92bc3fcd.chunk.js.LICENSE.txt",
     "static/media/inter.css": "/hero-loops/static/media/Inter.var.9df5db38.woff2"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.8ec0156a.js",
     "static/css/2.0d28e522.chunk.css",
     "static/js/2.92bc3fcd.chunk.js",
-    "static/css/main.2df9cab0.chunk.css",
-    "static/js/main.ec802982.chunk.js"
+    "static/css/main.c14381a4.chunk.css",
+    "static/js/main.556f7528.chunk.js"
   ]
 }
