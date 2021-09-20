@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/hero-loops/static/css/main.65b8fdcf.chunk.css",
-    "main.js": "/hero-loops/static/js/main.f1ebff73.chunk.js",
-    "main.js.map": "/hero-loops/static/js/main.f1ebff73.chunk.js.map",
-    "runtime-main.js": "/hero-loops/static/js/runtime-main.69c4c814.js",
-    "runtime-main.js.map": "/hero-loops/static/js/runtime-main.69c4c814.js.map",
+    "main.css": "/hero-loops/static/css/main.2df9cab0.chunk.css",
+    "main.js": "/hero-loops/static/js/main.ec802982.chunk.js",
+    "main.js.map": "/hero-loops/static/js/main.ec802982.chunk.js.map",
+    "runtime-main.js": "/hero-loops/static/js/runtime-main.8ec0156a.js",
+    "runtime-main.js.map": "/hero-loops/static/js/runtime-main.8ec0156a.js.map",
     "static/css/2.0d28e522.chunk.css": "/hero-loops/static/css/2.0d28e522.chunk.css",
-    "static/js/2.8c4f13d9.chunk.js": "/hero-loops/static/js/2.8c4f13d9.chunk.js",
-    "static/js/2.8c4f13d9.chunk.js.map": "/hero-loops/static/js/2.8c4f13d9.chunk.js.map",
-    "static/js/3.66952a65.chunk.js": "/hero-loops/static/js/3.66952a65.chunk.js",
-    "static/js/3.66952a65.chunk.js.map": "/hero-loops/static/js/3.66952a65.chunk.js.map",
+    "static/js/2.92bc3fcd.chunk.js": "/hero-loops/static/js/2.92bc3fcd.chunk.js",
+    "static/js/2.92bc3fcd.chunk.js.map": "/hero-loops/static/js/2.92bc3fcd.chunk.js.map",
+    "static/js/3.121a4678.chunk.js": "/hero-loops/static/js/3.121a4678.chunk.js",
+    "static/js/3.121a4678.chunk.js.map": "/hero-loops/static/js/3.121a4678.chunk.js.map",
     "index.html": "/hero-loops/index.html",
     "static/css/2.0d28e522.chunk.css.map": "/hero-loops/static/css/2.0d28e522.chunk.css.map",
-    "static/css/main.65b8fdcf.chunk.css.map": "/hero-loops/static/css/main.65b8fdcf.chunk.css.map",
-    "static/js/2.8c4f13d9.chunk.js.LICENSE.txt": "/hero-loops/static/js/2.8c4f13d9.chunk.js.LICENSE.txt",
+    "static/css/main.2df9cab0.chunk.css.map": "/hero-loops/static/css/main.2df9cab0.chunk.css.map",
+    "static/js/2.92bc3fcd.chunk.js.LICENSE.txt": "/hero-loops/static/js/2.92bc3fcd.chunk.js.LICENSE.txt",
     "static/media/inter.css": "/hero-loops/static/media/Inter.var.9df5db38.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.69c4c814.js",
+    "static/js/runtime-main.8ec0156a.js",
     "static/css/2.0d28e522.chunk.css",
-    "static/js/2.8c4f13d9.chunk.js",
-    "static/css/main.65b8fdcf.chunk.css",
-    "static/js/main.f1ebff73.chunk.js"
+    "static/js/2.92bc3fcd.chunk.js",
+    "static/css/main.2df9cab0.chunk.css",
+    "static/js/main.ec802982.chunk.js"
   ]
 }
