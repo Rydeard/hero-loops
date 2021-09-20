@@ -26,9 +26,9 @@ export default class LoopOverview extends React.Component<LoopOverviewProps> {
     fetchLoopItems(): Array<LoopItem> {
         let loopItems: Array<LoopItem> = [
             {
-                icon: Icons.chat,
-                primaryText: "Test",
-                secondaryText: "Test",
+                icon: Icons.hiking,
+                primaryText: "Explore",
+                secondaryText: "Dark Caverns",
                 minutes: 30
             },
         ]
