@@ -3,5 +3,8 @@ Castle icon by Delapouite from Game-icons.net
 Ouroboros icon by Lorc from Game-icons.net
 Swordman icon by Lorc from Game-icons.net
 
+HeroIcons icons from heroicons.com
+FeatherIcons icons from feathericons.com
+
 Icon color and size may have been modified.
 Site logo is created using modified versions of Ouroboros and Swordsman icons and may not accurately reflect the author's original work.
