@@ -63,3 +63,18 @@ body ol::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #262626;
 }
+
+#top-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+}
+
+#top-bar-right-container {
+    display: flex;
+    align-items: center;
+}

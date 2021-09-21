@@ -12,6 +12,8 @@ import Attributes from './components/tabs/character/Attributes';
 import Items from './components/tabs/character/Items';
 import CombatStrategy from './components/tabs/skills/CombatStrategy';
 import Skills from './components/tabs/skills/Skills';
+import DayControls from './components/main/DayControls';
+import Settings from './components/main/Settings';
 
 type AppProps = {
 }
@@ -48,7 +50,7 @@ export default class App extends React.Component<AppProps, AppState> {
 
   render() {
     //        <GameTickTest gameTick={this.state.gameTick}></GameTickTest>
-    const tabs:Array<TabData> = [
+    const tabs: Array<TabData> = [
       //home
       {
         leftContainerContent: <LoopOverview></LoopOverview>,
@@ -71,19 +73,21 @@ export default class App extends React.Component<AppProps, AppState> {
       },
     ]
 
-    let selectedTab:TabData = tabs[this.state.selectedTabIndex]
+    let selectedTab: TabData = tabs[this.state.selectedTabIndex]
     return (
-      
+
       <div>
-        <TabBar tabs={["Home", "Loop", "Character", "Skills"]} onClick={this.handleTabChange} selectedTabIndex={this.state.selectedTabIndex}></TabBar>
+        <div id="top-bar-container"><TabBar tabs={["Home", "Loop", "Character", "Skills"]} onClick={this.handleTabChange} selectedTabIndex={this.state.selectedTabIndex}></TabBar>
+          <div id="top-bar-right-container"><Settings></Settings>
+            <DayControls></DayControls></div></div>
         <LayoutContainer {...selectedTab} ></LayoutContainer>
       </div>
 
     );
   }
 
-  handleTabChange = (tabIndex:number):void=>{
-    this.setState({selectedTabIndex: tabIndex});
+  handleTabChange = (tabIndex: number): void => {
+    this.setState({ selectedTabIndex: tabIndex });
   }
 
   tick() {
