@@ -1,13 +1,16 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import gameDataReducer from "./GameData";
 
-export default configureStore({
-  reducer: {},
-})
+// what I added
+const reducer = combineReducers({
+  gameDataReducer: gameDataReducer
+});
 
 const store = configureStore({
-    reducer: {
-    },
+    reducer: reducer,
   })
+
+export default store;
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>

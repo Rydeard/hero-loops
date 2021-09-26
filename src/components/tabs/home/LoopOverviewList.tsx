@@ -1,13 +1,6 @@
 import React from "react";
 import LoopOverviewListItem from "./LoopOverviewListItem";
 
-declare global {type LoopItem = {
-    icon:React.ReactElement
-    primaryText:string
-    secondaryText:string
-    minutes:number
-}}
-
 type LoopOverviewListProps = {
     loopItems:Array<LoopItem>
 }

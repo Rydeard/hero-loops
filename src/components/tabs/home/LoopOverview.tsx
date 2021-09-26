@@ -4,13 +4,19 @@ import TabTitle from "../shared/TabTitle";
 import LoopOverviewList from "./LoopOverviewList";
 import './LoopOverview.css'
 import Icons from "../../../utils/Icons";
+import { connect, useSelector } from "react-redux";
+import { RootState } from "../../../app/store";
+import { useAppSelector } from "../../../app/hooks";
 
 
 type LoopOverviewProps = {
+    loopItems: Array<LoopItem>
 }
 
-export default class LoopOverview extends React.Component<LoopOverviewProps> {
+class LoopOverview extends React.Component<LoopOverviewProps> {
     render() {
+        let loopItems: Array<LoopItem> = this.props.loopItems;
+
         let tabHeaders = [<h2>Exploring...</h2>, <div style={{marginRight: 6}}>{Icons.clock}</div>]
 
         let x = <div></div>
@@ -19,19 +25,13 @@ export default class LoopOverview extends React.Component<LoopOverviewProps> {
         return <div>
             <TabTitle leftString={"Day 1"} rightString={"1:30pm"}></TabTitle>
             <TabHeader tabHeaders={tabHeaders}></TabHeader>
-            <LoopOverviewList loopItems={this.fetchLoopItems()}></LoopOverviewList>
+            <LoopOverviewList loopItems={loopItems}></LoopOverviewList>
         </div>
     }
-
-    fetchLoopItems(): Array<LoopItem> {
-        let loopItems: Array<LoopItem> = [
-            {
-                icon: Icons.hiking,
-                primaryText: "Explore",
-                secondaryText: "Dark Caverns",
-                minutes: 30
-            },
-        ]
-        return loopItems;
-    }
 }
+
+const mapStateToProps = (state:RootState) => ({
+    loopItems: state.gameDataReducer.loopItems
+});
+
+export default connect(mapStateToProps)(LoopOverview);
